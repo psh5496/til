@@ -21,6 +21,46 @@ Dark green: #28b485
   text-align: center;
 }
 
+.exciting{
+  font-size: 35px;
+  text-align: center;
+  margin-top:40px;
+  margin-bottom: 40px;
+  color:greenyellow;
+  letter-spacing:0.2rem;
+  background: linear-gradient(to right, greenyellow, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.going{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.Lorem{
+  font-size: 16px;
+  margin-bottom:24px;
+}
+
+.live{
+  font-size: 16px;
+  margin-bottom:20px;
+}
+
+.Lorem2{
+  font-size: 16px;
+  margin-bottom:24px;
+}
+
+.learn{
+  font-size: 1.6rem;
+  color: yellowgreen;
+  border-bottom: 1px solid yellowgreen;
+  text-decoration: none;
+  padding-bottom: 3px;
+}
+
 .where{
   font-size: 2rem;
   color:white;
@@ -28,13 +68,34 @@ Dark green: #28b485
   text-align: center;
 }
 
+.firstimg{
+
+}
+
+.img1{
+
+}
+
+.img2{
+
+}
+
+.img3{
+
+}
+
+.firstwords{
+
+}
 
 .discover{
   cursor: pointer;
-  padding: 15px 40px;
+  display:inline-block;
+  padding: 1.5rem 4rem;
+  position: relative;
   background-color: white;
   border: none;
-  border-radius: 30px;
+  border-radius: 10rem;
   margin-top: 60px;
 }
 
@@ -46,11 +107,16 @@ Dark green: #28b485
   margin-top: 230px;
 }
 
+.firsts{
+  display:flex;
+  justify-content: space-around;
+}
+
 header {
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(126, 213, 111, 0.8),
+      rgba(108, 139, 102, 0.8),
       rgba(40, 180, 131, 0.8)
     ),
     url(../img/hero.jpg);
