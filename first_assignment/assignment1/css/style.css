@@ -16,22 +16,45 @@ Dark green: #28b485
 }
 
 .explore{
-  margin-top: 300px;
+  margin-top: 15%;
   background-color: rgba(255,255,255,0.8);
   font-size: 1.5rem;
-  height: 400px;
-  width: 300px;
+  height: 350px;
+  width: 270px;
   text-align: center;
   border-radius: 3px;
   font-size: 15px;
-  margin-left:75px;
+  margin-left: 70px;
+}
+
+
+.story{
+
+  background-color: rgba(255,255,255,0.6);
+  font-size: 1.5rem;
+  width: 900px;
+  border-radius: 3px;
+  font-size: 15px;
+  z-index: 20;
+  padding: 20px 50px 20px 50px;
+
+  display: flex;
+  
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.storyimg1{
+  height:50%;
+  width:20%;
 }
 
 .thesea{
   perspective: 150rem;
   position: relative;
   height:52rem;
-  margin-left: 50px;
+  margin-left: 70px;
   width: 30rem;
   background-color: white;
 }
@@ -73,12 +96,90 @@ Dark green: #28b485
   border-bottom: 1px solid #eee;
   margin-top: 10px;
 }
+.chapter5 .content-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+
 
 .chapter3{
   display:flex;
   justify-content: center;
 }
 
+.chapter5 .story{
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+  margin-top: 70px;
+  transform: skewX(-12deg);
+
+  width: 50%;
+  height: 20%;
+}
+.story .title{
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+.chapter5 .storyimg1{
+  border-radius: 300px;
+  width: 150px;
+  height: 150px;
+  transform: skew(12deg);
+
+}
+
+.text-content1{
+  margin-left: 30px;
+}
+
+.text-content2{
+  margin-left: 30px;
+}
+
+.text-content3{
+  margin-left: 20px;
+}
+
+.text-content4{
+  margin-left: 10px;
+}
+
+.chapter5 .text-wrap{
+  transform: skew(12deg);
+  font-size:18px;
+}
+.text-wrap .title{
+  margin-left:-20px;
+}
+
+
+
+
+content3{
+  
+  height: 110vh;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+width: 100%;
+  position: absolute;
+  top: 100%;
+}
+
+content3 .chapter6{
+  height: 100%;
+  background-color: greenyellow;
+
+}
+
+content3 .login-wrap{
+
+  background-image:  linear-gradient(105deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 65%, transparent 65%),url(../img/nat-10.jpg);
+}
 .outdoor{
   font-size: 6rem;
   color:white;
@@ -137,12 +238,47 @@ Dark green: #28b485
   background: linear-gradient(to right, greenyellow, green);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
 
+.wemake{
+  font-size: 35px;
+  text-align: center;
+  margin-top:100px;
+  margin-bottom: 40px;
+  color:greenyellow;
+  letter-spacing:0.2rem;
+  background: linear-gradient(to right, greenyellow, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.bg-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 140vh;
+  width: 100%;
+  opacity: 0.15;
+  overflow: hidden;
+}
+
+.bg-video__content{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 content1{
-  height: 135vh;
+  height: 110vh;
   background-color: #f7f7f7;
+}
+
+content2{
+  height: 140vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .going{
@@ -168,10 +304,19 @@ content1{
 
 .learn{
   font-size: 1.6rem;
-  color: yellowgreen;
+  color: var(--color-medium-green);
   border-bottom: 1px solid yellowgreen;
   text-decoration: none;
   padding-bottom: 3px;
+}
+
+.readall{
+  font-size: 1.6rem;
+  color: var(--color-medium-green);
+  border-bottom: 1px solid yellowgreen;
+  text-decoration: none;
+  padding-bottom: 3px;
+  margin-top: 100px;
 }
 
 .where{
@@ -202,18 +347,15 @@ main{
 
 
 content{
-  height: 135vh;
+  height: 100vh;
   background-image: linear-gradient(
     to right bottom,
     rgba(108, 139, 102, 0.8),
     rgba(40, 180, 131, 0.8)
-  );
-  clip-path: polygon(0  45vh, 100% 0, 100% 90vh, 0 100%);
-
+  ), url(../img/nat-4.jpg);
+  clip-path: polygon(0  15vh, 100% 0, 100% 85vh, 0 100%);
 }
-.firstimg{
 
-}
 
 .img1{
   position: relative;
@@ -264,6 +406,16 @@ content{
   margin-top: 60px;
 }
 
+.discover2{
+  cursor: pointer;
+  margin-left: 43%;
+  padding: 1.5rem 4rem;
+  background-color: var(--color-medium-green);
+  color:white;
+  border: none;
+  border-radius: 10rem;
+  margin-top: 80px;
+}
 .words{
   display:flex;
   flex-direction: column;
@@ -280,12 +432,7 @@ content{
 
 header {
   height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(108, 139, 102, 0.8),
-      rgba(40, 180, 131, 0.8)
-    ),
-    url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,133,0.8)),url(../img/hero-small.jpg);
   background-size: cover;
   /* image가 화면크기에 따라서 어떻게 줄어드는지 보여준다. 그때 기준 (top, bottom, center) */
   background-position: top;
@@ -295,9 +442,9 @@ header {
 }
 
 .logoImg{
-  margin: 20px;
-  width: 80x;
-  height: 30px;
+  margin: 40px;
+  width: 87px;
+  height: 47px;
 }
 *,
 *::after,
@@ -329,6 +476,7 @@ header {
 html {
   /* font-size: 10px; */
   font-size: 62.5%;
+  padding: 2%;
 }
 /*
   Responsive 제작시 작업순서
@@ -372,6 +520,9 @@ body {
   background-color: #333;
   padding: 10rem 0;
   font-size: 1.4rem;
+  position: absolute;
+  top: 200%;
+  
 }
 
 .footer__logo-box {
